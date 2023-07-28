@@ -564,6 +564,7 @@ a:hover {
   font-weight: 400;
   line-height: 91.25%;
   letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
 
 .section-content {
@@ -993,6 +994,94 @@ a:hover {
 }
 .adventure__image-container:hover .adventure__image {
   transform: scale(1.1);
+}
+
+.photo-competition {
+  background-color: #000000;
+}
+.photo-competition__image-one-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  max-width: 222px;
+}
+.photo-competition__image-one-container:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.photo-competition__image-one-container .ratio-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-competition__image-two-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  max-width: 304px;
+}
+.photo-competition__image-two-container:before {
+  content: "";
+  display: block;
+  padding-top: 66.1184210526%;
+}
+.photo-competition__image-two-container .ratio-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-competition__image-three-container {
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  max-width: 275.81px;
+}
+.photo-competition__image-three-container:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+.photo-competition__image-three-container .ratio-item {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.photo-competition__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
+  align-items: center;
+}
+.photo-competition__title {
+  margin-bottom: 120px;
+}
+.photo-competition__images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photo-competition__image-one-container, .photo-competition__image-two-container, .photo-competition__image-three-container {
+  border: 7px solid #ffffff;
+  border-bottom: 35px solid #ffffff;
+}
+.photo-competition__image-one-container {
+  transform: rotate(-15deg);
+}
+.photo-competition__image-two-container {
+  transform: rotate(15deg);
+}
+.photo-competition__image-three-container {
+  position: relative;
+  top: -50px;
+  transform: rotate(-5deg);
+}
+.photo-competition__info-container {
+  color: #FFF;
+  font-family: Nissan Brand;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36.5px; /* 243.333% */
+  letter-spacing: -0.6px;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=home.css.map*/

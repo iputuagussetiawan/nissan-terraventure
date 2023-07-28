@@ -202,7 +202,7 @@
             <div class="container">
                 <div class="adventure__title">
                     <h2 class="section-title">
-                        MEMPERMUDAH PETUALANGAN ANDA
+                        Simplify Your Adventure
                     </h2>
                 </div>
                 <div class="adventure__grid">
@@ -226,6 +226,39 @@
                     </div>
                     <div class="adventure__image-container">
                         <img src="/images/pages/home/adventure/07.jpg" alt="gallery 07" class="adventure__image ratio-item">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photo-competition section-padding">
+            <div class="container">
+                <div class="photo-competition__title">
+                    <h2 class="section-title">
+                        Photo Upload Competition
+                    </h2>
+                </div>
+                <div class="photo-competition__grid">
+                    <div class="photo-competition__images">
+                        <div class="photo-competition__image-one-container">
+                            <img class="photo-competition__image-one ratio-item" src="/images/pages/home/photo-competition/01.jpg" alt="Photo Upload Competition 01">
+                        </div>
+                        <div class="photo-competition__image-two-container">
+                            <img class="photo-competition__image-two ratio-item" src="/images/pages/home/photo-competition/02.jpg" alt="Photo Upload Competition 02">
+                        </div>
+                        <div class="photo-competition__image-three-container">
+                            <img class="photo-competition__image-three ratio-item" src="/images/pages/home/photo-competition/03.jpg" alt="Photo Upload Competition 03">
+                        </div>
+                    </div>
+                    <div class="photo-competition__info-container">
+                        <p>Grand Winner : Get GOPRO HERO 11 black creator edition. 
+                        2nd Winner & Others : Merchandise Travel like Camping tent / bag / T-Shirt.
+                        Create social media campaign to get UGC (User Generated Content) with Adventure Competition Photo Challenge with terms & conditions :
+                        </p>
+                        <ul>
+                            <li>Followed Instagram @nissan.id</li>
+                            <li>Post on Feeds with interesting caption where do you want to travel if you could ride Nissan Terra with you. Must included hashtag #elevatethejourney & #terraventure and tag 5 people to join this competition</li>
+                            <li>Post the Story with Caption “I want to ride Nissan Terra to … “, and tag @nissan.id with the hashtag #elevatethejourney & #terraventure.tag 5 people to join this competition </li>
+                        </ul>
                     </div>
                 </div>
             </div>
