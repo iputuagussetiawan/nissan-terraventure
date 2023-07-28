@@ -1,0 +1,30 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+
+.collaboration{
+    @include imageRatio(749,408);
+    background-color: #000000;
+
+    &__title{
+        margin-bottom: 125px;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 99px;
+        align-items: center;
+    }
+
+    &__info-container{
+        padding: 0px 50px 0px 0px;
+        color: #FFF;
+        font-family: Nissan Brand;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36.5px; /* 243.333% */
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+    }
+}

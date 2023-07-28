@@ -1,0 +1,41 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+
+.home-about{
+    background-color: black;
+
+    iframe{
+        width: 100%;
+    }
+
+    &__title{
+        margin-bottom: 94px;
+        color: #ffffff;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 91.25%;
+        letter-spacing: -0.6px;
+    }
+
+    &__description{
+        position: relative;
+        padding: 80px 0px;
+        color: #FFF;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 243.333%;
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    &__art{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: -1;
+    }
+}

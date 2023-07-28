@@ -1,0 +1,134 @@
+
+@use "../_config.scss" as *;
+.navbar-custom {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    padding: 0px;
+    background-color: transparent;
+    z-index: 20;
+
+    .navbar-nav{
+        .dropdown-menu {
+            max-width: 72px;
+            min-width: unset;
+            text-align: center;
+        }
+        .nav-item{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .nav-link{
+                position: relative;
+                padding: 29px 0px;
+                color: color(black,200);
+                font-size: 28px;
+                font-weight: 400;
+                transition: 0.4s ease;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 2px;
+                    background-color: color(blue,400);
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform ease 0.4s;
+                }
+                &:hover,
+                &.active {
+                    color: color(blue,400);
+                }
+                &:hover::before {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+                &.active::before{
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+    .navbar-toggler{
+        position: relative;
+        z-index: 1000;
+        border: none;
+        outline: none;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    @media only screen and (max-width: 1919.98px) {
+        .navbar-nav{
+           
+            .nav-item{
+                margin-right: 1.5625vw;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .nav-link{
+                    font-size: 1.45833vw;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 991.98px) {
+        .navbar-collapse{
+            transition: 0.1s linear;
+        }
+        .navbar-collapse.collapse {
+            height: 100vh;
+            
+        }
+        .navbar-nav{
+            padding-top: 50px;
+            .nav-item{
+                margin-right: 0px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                .nav-link{
+                    padding: 20px 0px;
+                    font-size: 32px;
+                    transition: 0.4s ease;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 575.98px) {
+        .navbar-nav{
+            padding-top: 22px;
+        }
+    }
+
+
+}
+.navbar-brand{
+    padding: 9px 0px;
+    &__image{
+        max-width: 138px;
+        height: auto;
+    }
+
+    @media only screen and (max-width: 1919.98px) {
+        &__image{
+            max-width: 110px;
+        }
+    }
+    @media only screen and (max-width: 1199.98px) {
+        &__image{
+            max-width: 100px;
+        }
+    }
+}

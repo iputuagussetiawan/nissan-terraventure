@@ -1,0 +1,83 @@
+@use 'sass:map';
+@use 'sass:math';
+@use '_config.scss' as *;
+
+// @use 'plugin/bootstrap/bootstrap.scss' with (
+//     $container-max-widths: (
+//         sm: 540px,
+//         md: 720px,
+//         lg: 960px,
+//         xl: 1140px,
+//         xxl: 90%
+//     ),
+// );
+@use 'plugin/_tmdrPreset.scss' with (
+    $spacingIncrement: 15,
+);
+
+@use "../../node_modules/bootstrap/scss/bootstrap.scss" with (
+    $container-max-widths: (
+        sm:  93%,
+        md:  93%,
+        lg:  93%,
+        xl:  83%,
+        xxl: 83%
+    ),
+);
+
+
+// |‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾| //
+// | Timedoor New Standard                   | //
+// |_________________________________________| //
+
+.ratio-item {
+    @extend %ratioItem;
+}
+
+.container-fluid{
+    padding: 0px 58px;
+    @media only screen and (max-width: 1919.98px) {
+        padding: 0px 3.020833vw;
+    }
+}
+
+@media (min-width: 1200px){
+    .modal-xl {
+        --bs-modal-width: 1024px;
+    }
+}
+
+@media (min-width: 1600px){
+    .modal-xl {
+        --bs-modal-width: 1440px;
+    }
+}
+
+@font-face {
+    font-family: 'Nissan Brand Bold';
+    src: url('../../fonts/NissanBrand-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand Light';
+    src: url('../../fonts/NissanBrand-Light.TTF') format('truetype');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nissan Brand Regular';
+    src: url('../../fonts/NissanBrand-Regular.ttf') format('truetype');
+    font-weight: regular;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+

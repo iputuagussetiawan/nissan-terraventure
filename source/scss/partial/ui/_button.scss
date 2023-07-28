@@ -1,0 +1,78 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+
+.btn{
+    min-width:200px;
+    padding: 14px 40px;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1.4px;
+    text-transform: uppercase; 
+    border-radius: 8px;
+
+    @media only screen and (max-width: 1919.98px) {
+        padding: 1.5625vw 3.125vw;
+        font-size: 1.45833vw;
+    }
+}
+.btn-primary{
+    color: color(white);
+    background-color:color(blue,300);
+    border-color: color(blue,300);
+    &:hover{
+        color: color(white);
+        background-color: color(blue,200);
+        border-color: color(blue,200);
+    }
+    &:focus,
+    &:active,
+    &:first-child:active{
+        color: color(white);
+        background-color:color(blue,300);
+        border-color: color(blue,300);
+    }
+    &.disabled {
+        color:  color(white);
+    }
+}
+.btn-secondary{
+    background-color: color(white);
+    border-color: color(white);
+    color: color(blue,400);
+    
+    &:hover{
+        background-color: color(white,100);
+        border-color: color(white,100);
+        color: color(blue,400);
+    }
+    &:focus,
+    &:active,
+    &:first-child:active{
+        background-color: color(white);
+        border-color: color(white);
+        color: color(blue,400);
+    }
+}
+
+.btn-danger{
+    background-color: #C9012D;
+    border-color: #C9012D;
+    color: #ffffff;
+    text-decoration: underline;
+
+    &:hover{
+        color: color(white);
+        background-color:#C9012D;
+        border-color: #C9012D;
+    }
+    &:focus,
+    &:active,
+    &:first-child:active{
+        color: color(white);
+        background-color:#C9012D;
+        border-color: #C9012D;
+    }
+    &.disabled {
+        color:  color(white);
+    }
+}

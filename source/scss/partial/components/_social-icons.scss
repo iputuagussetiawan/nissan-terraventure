@@ -1,0 +1,16 @@
+.social-icons{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    &__link{
+        margin-right: 10px;
+        display: inline-block;
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    &__icon{
+        max-width: 40px;
+        height: 40px;
+    }
+}

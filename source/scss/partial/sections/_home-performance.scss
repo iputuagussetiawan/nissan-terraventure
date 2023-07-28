@@ -1,0 +1,37 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+@use '../components/cards/_card-specifications.scss' as *;
+
+
+.home-performance{
+    @include imageRatio(1440,607);
+    background-color: #000000;
+
+    &__image-container{
+        margin-top: 61px;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: #00000038;
+        }
+    }
+
+    &__inner{
+        position: relative;
+    }
+
+    &__specifications{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 32px;
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3;
+    }
+}

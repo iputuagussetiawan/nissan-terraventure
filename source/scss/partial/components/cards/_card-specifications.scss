@@ -1,0 +1,39 @@
+@use 'sass:math';
+@use '../../../_config.scss' as *;
+
+.card-specifications{
+    &__label{
+        margin-bottom: 13px;
+        color: #FFF;
+        text-align: center;
+        font-family: Nissan Brand;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36.5px; /* 228.125% */
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+    }
+    &__value{
+        color: #FFF;
+        text-align: center;
+        font-family: Nissan Brand;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36.5px; /* 101.389% */
+        letter-spacing: -0.6px;
+    }
+
+    &__plus-minus,
+    &__unit{
+        color: #FFF;
+        font-family: Nissan Brand;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 36.5px;
+        letter-spacing: -0.6px;
+        text-transform: uppercase;
+    }
+}

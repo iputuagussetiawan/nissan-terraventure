@@ -1,0 +1,75 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+@use '../components/_banner-logo.scss' as *;
+
+.banner{
+    @include imageRatio(1920,1010,false);
+    position: relative;
+    .swiper-pagination{
+        bottom: 15px;
+        z-index: 10;
+    }
+    .swiper-pagination-bullet {
+        width: 26px;
+        height: 26px;
+        opacity: 1;
+        background-color: transparent;
+        border: 2px solid #ffffff;
+        transition: 0.4s ease;
+    }
+    .swiper-pagination-bullet-active {
+        opacity: 1;
+        background: #ffffff;
+    }
+    &__container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 100%;
+        padding-top: 100px;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+    &__image-container{
+        height: 100vh;
+        min-height: 550px;
+    }
+
+    &__location{
+        position: absolute;
+        right: 0px;
+        bottom: 54px;
+        color: #FFF;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 36.5px;
+        letter-spacing: -0.6px;
+    }
+
+    &__title{
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 36.5px;
+        letter-spacing: -0.6px;
+    }
+    &__subtitle{
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36.5px;
+        letter-spacing: -0.6px;
+    }
+
+    &__action-wrapper{
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: grid;
+        width: 30%;
+        margin: 0 auto;
+    }
+}

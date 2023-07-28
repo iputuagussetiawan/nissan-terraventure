@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use '../../_config.scss' as *;
+.adventure{
+    @include imageRatio(590,563);
+    background-color: #000000;
+    &__title{
+        margin-bottom: 57px;
+    }
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 37px 20px;
+    }
+
+
+    &__image-container{
+        overflow: hidden;
+        &.big{
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+    }
+    &__image{
+        transition: 1s ease;
+    }
+    &__image-container:hover &__image{
+        transform:scale(1.1);
+    }
+}
